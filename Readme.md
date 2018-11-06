@@ -32,22 +32,24 @@ npm run build
 
 Open the index.html in the browser
 
-## Running the tests
+## Development
 
-Explain how to run the automated tests for this system
-
-### Development
-
-Development is running with an Express server and Hot Reload.  It also has the Webpack Middleware installed.  
+Development is running with an Express server and Hot Reload.  It also has the Webpack Middleware installed.  Also Has hot Module reloading on port http://localhost:8080/
 
 The current commands
 
 ```
-"test": "echo \"Error: no test specified\" && exit 1",
 "watch": "webpack --watch",
 "start": "webpack-dev-server --open",
 "server": "node server.js",
-"build": "webpack"
+```
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+```
+npm run test
+"test": "echo \"Error: no test specified\" && exit 1",
 ```
 
 ### And coding style tests
@@ -60,7 +62,12 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To Deploy the project 
+
+```
+npm run build
+"build": "webpack"
+```
 
 ## Built With
 

@@ -11,6 +11,9 @@ module.exports = {
     print: './src/print.js'
   },
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  },
   plugins: [
     new ManifestPlugin(),
     new CleanWebpackPlugin(['dist']),

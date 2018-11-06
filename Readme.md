@@ -36,12 +36,18 @@ Open the index.html in the browser
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+### Development
 
-Explain what these tests test and why
+Development is running with an Express server and Hot Reload.  It also has the Webpack Middleware installed.  
+
+The current commands
 
 ```
-Give an example
+"test": "echo \"Error: no test specified\" && exit 1",
+"watch": "webpack --watch",
+"start": "webpack-dev-server --open",
+"server": "node server.js",
+"build": "webpack"
 ```
 
 ### And coding style tests

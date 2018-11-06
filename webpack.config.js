@@ -5,16 +5,21 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development',
+  entry: {
+    app: './src/index.js',
+    print: './src/print.js'
+  },
+  devtool: 'inline-source-map',
   plugins: [
     new ManifestPlugin(),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-    title: 'Output Management'
+      title: 'Output Management'
     })
   ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name]bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
 };

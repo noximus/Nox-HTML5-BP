@@ -1,5 +1,5 @@
 {
-  "main.js": "bundle.js",
-  "image1.png": "1989275530ba6560785536d9ade2507c.png",
+  "app.js": "appbundle.js",
+  "print.js": "printbundle.js",
   "index.html": "index.html"
 }
